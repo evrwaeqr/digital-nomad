@@ -1,11 +1,11 @@
-export type TouristAttraction = {
+type TouristAttraction = {
   id: string
   name: string
   description: string
   cityId: string
 }
 
-export type CategoryCode =
+type CategoryCode =
   | 'ADVENTURE'
   | 'BEACH'
   | 'CULTURE'
@@ -17,14 +17,14 @@ export type CategoryCode =
   | 'URBAN'
   | 'FAVORITE'
 
-export type Category = {
+type Category = {
   id: string
   name: string
   description: string | null
   code: CategoryCode
 }
 
-export type City = {
+type City = {
   id: string
   name: string
   country: string
@@ -39,4 +39,6 @@ export type City = {
   relatedCitiesIds: string[]
 }
 
-export type CityPreview = Pick<City, 'id' | 'name' | 'country' | 'coverImage'>
+type CityPreview = Pick<City, 'id' | 'name' | 'country' | 'coverImage'>
+
+export { Category, CategoryCode, City, CityPreview, TouristAttraction }

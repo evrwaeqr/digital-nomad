@@ -1,6 +1,6 @@
 import { Category } from '@/types'
 
-export const categories: Category[] = [
+const categories: Category[] = [
   {
     id: 'star',
     code: 'FAVORITE',
@@ -62,3 +62,5 @@ export const categories: Category[] = [
     description: 'Explore a culinária local',
   },
 ]
+
+export { categories }

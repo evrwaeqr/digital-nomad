@@ -1,7 +1,7 @@
 import { City, CityPreview } from '@/types'
 import { categories } from './categories'
 
-export const cities: City[] = [
+const cities: City[] = [
   {
     id: 'rio-de-janeiro',
     name: 'Rio de Janeiro',
@@ -675,4 +675,6 @@ export const cities: City[] = [
   },
 ]
 
-export const cityPreviewList: CityPreview[] = cities
+const cityPreviewList: CityPreview[] = cities
+
+export { cities, cityPreviewList }
