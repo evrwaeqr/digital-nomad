@@ -1,0 +1,22 @@
+# Node / build
+node_modules
+build
+dist
+ios/Pods
+android/.gradle
+
+# Lockfiles / configs that you might not want formatted
+*.lock
+.vscode
+.idea
+
+# Generated bundles / assets
+*.keystore
+*.p12
+
+# Large binary blobs
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
